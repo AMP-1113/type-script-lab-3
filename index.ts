@@ -54,13 +54,14 @@ for (let villain in villainsArray) {
     }
     const play = playAndPickWinner(hero, villainsArray[villain]);
     if (play === hero) {
-        console.log("WIN");
+        console.log("*****WIN*****");
         hero.winCount++;
     } else if (play === villainsArray[villain]) {
-        console.log("LOSS")
+        console.log("*****LOSS*****")
     } else {
-        console.log("TIE")
+        console.log("*****TIE*****")
     }
+    console.log("---------------------------")
 }
 
 let totalWins: number = 0
